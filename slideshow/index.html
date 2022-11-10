@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carouse/swideshow</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img
+                    src="https://images.pexels.com/photos/5732133/pexels-photo-5732133.jpeg?cs=srgb&dl=pexels-lina-kivaka-5732133.jpg&fm=jpg&_gl=1*awhza5*_ga*MTAzNjYzNzUxNS4xNjY3OTAxMzc2*_ga_8JE65Q40S6*MTY2NzkwNjY5OS4yLjEuMTY2NzkwNzQ1Ny4wLjAuMA.." />
+            </div>
+            <div class="swiper-slide">
+                <img
+                    src="https://images.pexels.com/photos/6988608/pexels-photo-6988608.jpeg?cs=srgb&dl=pexels-polina-tankilevitch-6988608.jpg&fm=jpg&_gl=1*q3qa50*_ga*MTAzNjYzNzUxNS4xNjY3OTAxMzc2*_ga_8JE65Q40S6*MTY2NzkwNjY5OS4yLjEuMTY2NzkwODQzNC4wLjAuMA.." />
+            </div>
+            <div class="swiper-slide">
+                <img
+                    src="https://images.pexels.com/photos/14327570/pexels-photo-14327570.jpeg?cs=srgb&dl=pexels-breno-cardoso-14327570.jpg&fm=jpg&_gl=1*1h6p34e*_ga*MTAzNjYzNzUxNS4xNjY3OTAxMzc2*_ga_8JE65Q40S6*MTY2NzkwNjY5OS4yLjEuMTY2NzkwODY4NS4wLjAuMA.." />
+            </div>
+            <div class="swiper-slide">
+                <img
+                    src="https://images.pexels.com/photos/14270535/pexels-photo-14270535.jpeg?cs=srgb&dl=pexels-eugenia-remark-14270535.jpg&fm=jpg&_gl=1*y5q1ts*_ga*MTAzNjYzNzUxNS4xNjY3OTAxMzc2*_ga_8JE65Q40S6*MTY2NzkwNjY5OS4yLjEuMTY2NzkwODc4MC4wLjAuMA.." />
+            </div>
+            <div class="swiper-slide">
+                <img
+                    src="https://images.pexels.com/photos/14100684/pexels-photo-14100684.jpeg?cs=srgb&dl=pexels-kokokara-14100684.jpg&fm=jpg&_gl=1*ree3qx*_ga*MTAzNjYzNzUxNS4xNjY3OTAxMzc2*_ga_8JE65Q40S6*MTY2NzkwNjY5OS4yLjEuMTY2NzkwOTA0Mi4wLjAuMA.." />
+            </div>
+            <div class="swiper-slide">
+                <img
+                    src="https://images.pexels.com/photos/5732133/pexels-photo-5732133.jpeg?cs=srgb&dl=pexels-lina-kivaka-5732133.jpg&fm=jpg&_gl=1*awhza5*_ga*MTAzNjYzNzUxNS4xNjY3OTAxMzc2*_ga_8JE65Q40S6*MTY2NzkwNjY5OS4yLjEuMTY2NzkwNzQ1Ny4wLjAuMA.." />
+            </div>
+
+
+
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+
+</body>
+
+</html>
